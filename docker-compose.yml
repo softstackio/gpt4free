@@ -10,8 +10,8 @@ services:
     volumes:
       - .:/app
     ports:
-      - '8080:8080'
-      - '1337:8080'
+      - '8080:8090'
+      - '1337:8090'
       - '7900:7900'
     environment:
       - OLLAMA_HOST=host.docker.internal
