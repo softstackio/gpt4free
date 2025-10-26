@@ -10,8 +10,7 @@ services:
     volumes:
       - .:/app
     ports:
-      - '8080:8090'
-      - '1337:8090'
+      - '8089:1337'  # external:internal (maps your host 8081 → container 1337)
       - '7900:7900'
     environment:
       - OLLAMA_HOST=host.docker.internal
